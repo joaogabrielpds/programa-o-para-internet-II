@@ -1,24 +1,33 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog</title>
+
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
 </head>
 
-<body> 
-    <style>
-        
-        h1 {
-            color: #ff9500;
-        }
-    </style>
-
+<body>
     <h1>Seja bem-vindo ao meu blog!</h1>
-    <h2>criacao do blog em django</h2>
-    <p>
-        Este é meu primeiro blog desenvolvido com Django.
+    <h1>Meu Blog</h1>
+
+    {% for post in posts %}
+
+        <article>
+            <h2>{{ post.title }}</h2>
+
+            <p>{{ post.body }}</p>
+
+            <hr>
+        </article>
+
+    {% empty %}
+
+        <p>Nenhum post encontrado.</p>
+
+    {% endfor %}
 
 </body>
 </html>

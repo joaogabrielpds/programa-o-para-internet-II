@@ -1,5 +1,11 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from .models import Post
 
 
 def index(request):
-    return HttpResponse("Seja bem-vindo ao meu primeiro projeto Django!")
+    posts = Post.objects.all()
+    return render(request, "blog/index.html", {"posts": posts})
+
+def post_detail(request, slug):
+    post = Post.objects.get(slug=slug)
+    return render(request, "blog/post_detail.html", {"post": post})
