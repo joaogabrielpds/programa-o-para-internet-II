@@ -1,17 +1,28 @@
 from django.urls import path
+
 from . import views
 
+app_name = "blog"
+
 urlpatterns = [
-    path("", views.index, name="index"),
-    
-    
+    path(
+        "",
+        views.PostListView.as_view(),
+        name="post_list",
+    ),
+    path(
+        "<int:year>/<int:month>/<int:day>/<slug:post>/",
+        views.post_detail,
+        name="post_detail",
+    ),
+    path(
+        "<int:post_id>/share/",
+        views.post_share,
+        name="post_share",
+    ),
+    path(
+        "<int:post_id>/comment/",
+        views.post_comment,
+        name="post_comment",
+    ),
 ]
-
-def post_detail(request, slug):
-    post = Post.objects.get(slug=slug)
-    return render(request, "blog/post_detail.html", {"post": post})
-
-
-def post_list(request):
-    posts = Post.objects.all()
-    return render(request, "blog/post_list.html", {"posts": posts})

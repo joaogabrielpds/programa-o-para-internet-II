@@ -1,7 +1,8 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Meu Blog</title>
@@ -10,15 +11,23 @@
 </head>
 
 <body>
+
     <h1>Seja bem-vindo ao meu blog!</h1>
-    <h1>Meu Blog</h1>
 
     {% for post in posts %}
 
         <article>
-            <h2>{{ post.title }}</h2>
+            <h2>
+                <a href="{{ post.get_absolute_url }}">
+                    {{ post.title }}
+                </a>
+            </h2>
 
             <p>{{ post.body }}</p>
+
+            <small>
+                Publicado em: {{ post.publish }}
+            </small>
 
             <hr>
         </article>
@@ -28,6 +37,8 @@
         <p>Nenhum post encontrado.</p>
 
     {% endfor %}
+
+    {% include "pagination.html" with page=page_obj %}
 
 </body>
 </html>
