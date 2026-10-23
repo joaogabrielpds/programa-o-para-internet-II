@@ -1,0 +1,316 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-10-02T17:16:51.247Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "postagem teste",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-10-02T17:32:15.065Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "postagem teste",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-10-02T17:44:16.222Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "rumo a mudança do brasil",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-10-02T17:47:04.110Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "postagem teste",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-10-02T17:47:04.110Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "postagem teste",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-10-09T14:17:59.862Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "rumo a mudança do brasil",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-10-09T16:46:51.924Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "brasileirão",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-10-09T17:24:49.121Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "blog 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$mplDdcmtsp7sR5qrDFu0DB$H8/7yieAKV/fc4DnstF7SDHHh4RJVsxBw1DeYBRLL08=",
+    "last_login": "2026-10-02T17:15:28.193Z",
+    "is_superuser": true,
+    "username": "jgabriel",
+    "first_name": "",
+    "last_name": "",
+    "email": "joaogabriel@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-09-30T19:03:09.911Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "5ihg90sbe9y5q57xi4hx6idt7kc1y219",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAGYQou3XsGMgwgVUOT0q6MdzckXej2v_f-WwTatxr2ntcwJ3ERIE6_WyR-5jZAelC7L5KXtq1zlEORB-3ytqT8uh7u30GlXkeNpRCD1pCTNa5gUUBExgEUUOBNVAnPanKsvPGM5EjHCdnqbH1EFJ8v5_o3lg:1xCgr2:NdAu8BeIY9CCHw6jCwnax5Rl1Bzw4AOpzVHUcOF6eyE",
+    "expire_date": "2026-10-16T17:15:28.198Z"
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "domain": "127.0.0.1:8000",
+    "name": "Meu Blog"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 1,
+  "fields": {
+    "name": "blog",
+    "slug": "blog"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 2,
+  "fields": {
+    "name": "django",
+    "slug": "django"
+  }
+},
+{
+  "model": "taggit.tag",
+  "pk": 3,
+  "fields": {
+    "name": "python",
+    "slug": "python"
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 1,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 2,
+  "fields": {
+    "tag": 2,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 3,
+  "fields": {
+    "tag": 3,
+    "content_type": 7,
+    "object_id": 3
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 4,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 4
+  }
+},
+{
+  "model": "taggit.taggeditem",
+  "pk": 5,
+  "fields": {
+    "tag": 1,
+    "content_type": 7,
+    "object_id": 5
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "title": "rumo a mudança do brasil",
+    "slug": "rumo-a-mudanca-do-brasil",
+    "author": 1,
+    "body": "# Teste Markdown\r\n\r\nEste texto está **em negrito**.\r\n\r\n- Primeiro item\r\n- Segundo item",
+    "publish": "2026-10-02T17:42:36Z",
+    "created": "2026-10-02T17:44:16.220Z",
+    "updated": "2026-10-09T14:17:59.859Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "title": "brasileirão",
+    "slug": "brasileirao",
+    "author": 1,
+    "body": "tabela \r\n1-flamengo\r\n2-palmeiras\r\n3-cruzeiro",
+    "publish": "2026-10-09T16:45:12Z",
+    "created": "2026-10-09T16:46:51.919Z",
+    "updated": "2026-10-09T16:46:51.919Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "title": "blog 3",
+    "slug": "blog-3",
+    "author": 1,
+    "body": "execução do teste",
+    "publish": "2026-10-09T17:24:05Z",
+    "created": "2026-10-09T17:24:49.117Z",
+    "updated": "2026-10-09T17:24:49.117Z",
+    "status": "DF"
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "post": 3,
+    "name": "joao",
+    "email": "joaogabriel.gabrielpds@gmail.com",
+    "body": "Meu primeiro comentário no blog!",
+    "created": "2026-10-08T17:13:11.798Z",
+    "updated": "2026-10-08T17:13:11.798Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "post": 4,
+    "name": "gabriel",
+    "email": "joaogabriel.gabrielpds@gmail.com",
+    "body": "segue o lider",
+    "created": "2026-10-09T16:47:30.408Z",
+    "updated": "2026-10-09T16:47:30.408Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "post": 4,
+    "name": "gabriel",
+    "email": "joaogabriel.gabrielpds@gmail.com",
+    "body": "segue o lider",
+    "created": "2026-10-09T16:47:33.826Z",
+    "updated": "2026-10-09T16:47:33.826Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "post": 4,
+    "name": "gabriel",
+    "email": "joaogabriel.gabrielpds@gmail.com",
+    "body": "segue o lider",
+    "created": "2026-10-09T16:48:30.124Z",
+    "updated": "2026-10-09T16:48:30.124Z",
+    "active": true
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "post": 4,
+    "name": "gabriel",
+    "email": "joaogabriel.gabrielpds@gmail.com",
+    "body": "segue o lider",
+    "created": "2026-10-09T17:05:09.055Z",
+    "updated": "2026-10-09T17:05:09.055Z",
+    "active": true
+  }
+}
+]
